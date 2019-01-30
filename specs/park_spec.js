@@ -40,7 +40,7 @@ describe('Park', function() {
 
     park.removeDinosaur('Diplodocus')
     const actual = park.dinoCount();
-    assert.deepStrictEqual(actual, 1);
+    assert.deepStrictEqual(actual, 0);
   }); //not entirely sure this does pass...
 
   it('should be able to find the dinosaur that attracts the most visitors', function(){

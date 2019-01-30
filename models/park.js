@@ -16,7 +16,7 @@ Park.prototype.removeDinosaur = function (species) {
   const remainingDinosaurs = [];
 
   for (const dinosaur of this.collection) {
-    if (this.collection.species !== species) {
+    if (dinosaur.species !== species) {
       remainingDinosaurs.push(dinosaur);
     }
   }
@@ -33,7 +33,7 @@ Park.prototype.findSpecies = function (species) {
   const remainingDinosaurs = [];
 
   for (const dinosaur of this.collection) {
-    if (collection.species === species) {
+    if (dinosaur.species === species) {
       remainingDinosaurs.push(dinosaur);
     }
   }
